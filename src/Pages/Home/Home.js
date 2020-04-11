@@ -2,6 +2,7 @@ import React from 'react'
 
 import './Home.css'
 import Logo from '../../Template/Logo/Logo'
+import HomeContentCard from '../../Template/HomeContentCard/HomeContentCard'
 
 const Home = () => {
   return (
@@ -10,10 +11,9 @@ const Home = () => {
         <Logo />
       </div>
       <div className="home-content-grid">
-        <div>
-          <h1>Torça pelo seu time</h1>
-          <p>qualquer coisa</p>
-        </div>
+        <HomeContentCard title="Torça pelo seu time" subTitle="Veja os resultados" />
+        <HomeContentCard title="Torça pelo seu time" subTitle="Veja os resultados" />
+        <HomeContentCard title="Torça pelo seu time" subTitle="Veja os resultados" />
       </div>
     </div>
   )
