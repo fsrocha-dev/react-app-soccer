@@ -24,12 +24,44 @@ const Brasileirao = () => {
   }, [])
 
   return (
-    <div>
+    <div id="brasileirao">
       {loading && <h1>Carregando</h1>}
-      {!loading && (
+      {!loading && leagueTable && (
         <>
           <h1>Tabela</h1>
-          <div></div>
+          <div>
+            <table className="stripe-vertical">
+              <thead>
+                <tr>
+                  <th />
+                  <th />
+                  <th>P</th>
+                  <th>J</th>
+                  <th>V</th>
+                  <th>E</th>
+                  <th>D</th>
+                  <th>GC</th>
+                  <th>SG</th>
+                </tr>
+              </thead>
+              <tbody>
+                {leagueTable.map(r => (
+                  <tr key={r.position}>
+                    <td>{r.position}</td>
+                    <td>{r.team.name}</td>
+                    <td>{r.points}</td>
+                    <td>{r.playedGames}</td>
+                    <td>{r.won}</td>
+                    <td>{r.draw}</td>
+                    <td>{r.lost}</td>
+                    <td>{r.goalsFor}</td>
+                    <td>{r.goalsAgainst}</td>
+                    <td>{r.goalDifference}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
           <h1>Próximas Partidas</h1>
           <div></div>
         </>
