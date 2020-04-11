@@ -2,14 +2,7 @@ import React from 'react'
 import './Brasileirao.css'
 import { getLeagueTable, getNextMatches } from '../../services/api'
 import createPersistedState from 'use-persisted-state'
-
-const dateTimeFormat = Intl.DateTimeFormat('pt-br', {
-  year: 'numeric',
-  month: 'numeric',
-  day: 'numeric',
-  hour: 'numeric',
-  minute: 'numeric',
-})
+import { dateTimeFormat } from '../../Utils/dateTimeFormat'
 
 const formatDate = date => dateTimeFormat.format(new Date(date))
 

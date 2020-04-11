@@ -1,7 +1,10 @@
 import React from 'react'
 import { getMatch } from '../../services/api'
+import { dateTimeFormat } from '../../Utils/dateTimeFormat'
 
 import './LiveMatch.css'
+
+const formatDate = date => dateTimeFormat.format(new Date(date))
 
 const LiveMatch = () => {
   const [loading, setLoading] = React.useState(false)
@@ -34,7 +37,7 @@ const LiveMatch = () => {
             </div>
           </div>
           <div className="match-info">
-            <div className="match-date">01/01/2020</div>
+            <div className="match-date">{formatDate(match.date)}</div>
           </div>
         </div>
       )}
