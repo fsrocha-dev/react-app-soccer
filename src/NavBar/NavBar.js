@@ -1,5 +1,6 @@
 import React from 'react';
 import { useMediaQuery } from 'react-responsive'
+import { Link } from 'react-router-dom'
 
 import './NavBar.css'
 
@@ -23,7 +24,7 @@ const NavBar = () => {
 
   const [open, setOpen] = React.useState()
   const appLinks = links.map(l => (
-    <a key={l.to} href={l.to} className="nav-link">{l.text}</a>
+    <Link key={l.to} to={l.to} className="nav-link">{l.text}</Link>
   ))
 
 
