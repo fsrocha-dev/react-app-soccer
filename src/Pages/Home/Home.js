@@ -12,8 +12,8 @@ const Home = () => {
       </div>
       <div className="home-content-grid">
         <HomeContentCard title="Torça pelo seu time" subTitle="Veja os resultados" />
-        <HomeContentCard title="Torça pelo seu time" subTitle="Veja os resultados" />
-        <HomeContentCard title="Torça pelo seu time" subTitle="Veja os resultados" />
+        <HomeContentCard title="Favorite e fique atualizado" subTitle="Ver tabela" />
+        <HomeContentCard title="Assita em tempo real os jogos" subTitle="Ver jogo ao vivo" />
       </div>
     </div>
   )

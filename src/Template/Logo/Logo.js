@@ -2,7 +2,7 @@ import React from 'react'
 import './Logo.css'
 import urlBola from '../../static/bola.png'
 
-const height = "2em"
+const height = "2.8em"
 
 const Logo = () => (
   <div className="home-logo">
