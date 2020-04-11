@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom'
 import './App.css'
 
-import NavBar from './NavBar/NavBar'
+import NavBar from './Template/NavBar/NavBar'
 import Home from './Pages/Home/Home'
 import Brasileirao from './Pages/Brasileirao/Brasileirao'
 import LiveMatch from './Pages/LiveMatch/LiveMatch'
