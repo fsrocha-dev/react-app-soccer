@@ -99,8 +99,8 @@ const Brasileirao = () => {
                 {nextMatches.map(n => (
                   <tr key={n.id.toString()}>
                     <td>
-                      {favorites.includes(n.homeTeam.name) ||
-                        (favorites.includes(n.awayTeam.name) && <span>X</span>)}
+                      {(favorites.includes(n.awayTeam.name) ? <span style={{ color: 'red' }}>♥</span> : <span>♡</span>
+                      )}
                     </td>
                     <td>{`${n.homeTeam.name} X ${n.awayTeam.name}`}</td>
                     <td>{formatDate(n.utcDate)}</td>
